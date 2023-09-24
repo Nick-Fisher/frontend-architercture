@@ -1,15 +1,15 @@
-name: deploy-container
+name: microfrontends-deploy-container
 
 on:
   push:
     branches:
       - main
     paths:
-      - 'dashboard-example/container/**'
+      - 'microfrontends/dashboard-example/container/**'
 
 defaults:
   run:
-    working-directory: dashboard-example/container
+    working-directory: microfrontends/dashboard-example/container
 
 jobs:
   build:
